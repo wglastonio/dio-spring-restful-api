@@ -1,5 +1,5 @@
 # DIO Santander Bootcamp
-RESTful API using springboot
+RESTful API using spring boot.
 
 ## Classes Diagram
 
