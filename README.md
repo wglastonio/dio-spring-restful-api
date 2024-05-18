@@ -36,7 +36,7 @@ classDiagram
 
     class News {
         -icon: string
-        -newDescription: string
+        -newsDescription: string
     }
 
     User "1" -- "1" Account
