@@ -26,7 +26,7 @@ classDiagram
 
     class Feature {
         -icon: string
-        -description: string
+        -featureDescription: string
     }
 
     class Card {
@@ -36,7 +36,7 @@ classDiagram
 
     class News {
         -icon: string
-        -description: string
+        -newDescription: string
     }
 
     User "1" -- "1" Account
