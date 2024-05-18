@@ -16,7 +16,7 @@ public class Card {
     @Column(unique = true)
     private String cardNumber;
 
-    @Column(scale = 12, precision = 2)
+    @Column(scale = 2, precision = 10)
     private String cardLimit;
 
     public Long getId() {

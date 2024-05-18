@@ -20,10 +20,10 @@ public class Account {
 
     private String branch;
     
-    @Column(scale = 12, precision = 2)
+    @Column(scale = 2, precision = 10)
     private BigDecimal accountBalance;
 
-    @Column(scale = 12, precision = 2)
+    @Column(scale = 2, precision = 10)
     private BigDecimal accountLimit;
     
     public Long getId() {
