@@ -6,10 +6,10 @@ RESTful API using spring boot.
 ```mermaid
 classDiagram
     class User {
-        -name: string
-        -account: Account
+        -clientName: string
+        -accountNumber: Account
         -features: Feature[]
-        -card: Card
+        -cardNumber: Card
         -news: News[]
 
         +deposit(amount: float): void
@@ -18,7 +18,7 @@ classDiagram
     }
 
     class Account {
-        -number: string
+        -accountNumber: string
         -branch: string
         -balance: float
         -limit: float
@@ -30,7 +30,7 @@ classDiagram
     }
 
     class Card {
-        -number: string
+        -cardNumber: string
         -limit: float
     }
 
@@ -39,9 +39,8 @@ classDiagram
         -description: string
     }
 
-    User "1" *-- "1" Account
-    User "1" *-- "0..*" Feature
-    User "1" *-- "1" Card
-    User "1" *-- "0..*" News
-
+    User "1" -- "1" Account
+    User "1" -- "0..*" Feature
+    User "1" -- "1" Card
+    User "1" -- "0..*" News
 ```
