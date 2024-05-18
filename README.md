@@ -1,15 +1,15 @@
 # DIO Santander Bootcamp
-RESTful API using springboot
+RESTful API using spring boot.
 
 ## Classes Diagram
 
 ```mermaid
 classDiagram
     class User {
-        -name: string
-        -account: Account
+        -clientName: string
+        -accountNumber: Account
         -features: Feature[]
-        -card: Card
+        -cardNumber: Card
         -news: News[]
 
         +deposit(amount: float): void
@@ -18,30 +18,29 @@ classDiagram
     }
 
     class Account {
-        -number: string
+        -accountNumber: string
         -branch: string
-        -balance: float
-        -limit: float
+        -accountBalance: float
+        -accountLimit: float
     }
 
     class Feature {
         -icon: string
-        -description: string
+        -featureDescription: string
     }
 
     class Card {
-        -number: string
-        -limit: float
+        -cardNumber: string
+        -cardLimit: float
     }
 
     class News {
         -icon: string
-        -description: string
+        -newsDescription: string
     }
 
-    User "1" *-- "1" Account
-    User "1" *-- "0..*" Feature
-    User "1" *-- "1" Card
-    User "1" *-- "0..*" News
-
+    User "1" -- "1" Account
+    User "1" -- "0..*" Feature
+    User "1" -- "1" Card
+    User "1" -- "0..*" News
 ```
