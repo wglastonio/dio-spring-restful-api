@@ -20,8 +20,8 @@ classDiagram
     class Account {
         -accountNumber: string
         -branch: string
-        -balance: float
-        -limit: float
+        -accountBalance: float
+        -accountLimit: float
     }
 
     class Feature {
@@ -31,7 +31,7 @@ classDiagram
 
     class Card {
         -cardNumber: string
-        -limit: float
+        -cardLimit: float
     }
 
     class News {
