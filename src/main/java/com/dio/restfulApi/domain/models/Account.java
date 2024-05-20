@@ -16,7 +16,7 @@ public class Account {
     private Long id;
 
     @Column(unique = true)
-    private String accountNumber;
+    private String number;
 
     private String branch;
     
@@ -25,36 +25,46 @@ public class Account {
 
     @Column(scale = 2, precision = 10)
     private BigDecimal accountLimit;
-    
+
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
-    public String getAccountNumber() {
-        return accountNumber;
+
+    public String getNumber() {
+        return number;
     }
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+
+    public void setNumber(String number) {
+        this.number = number;
     }
+
     public String getBranch() {
         return branch;
     }
+
     public void setBranch(String branch) {
         this.branch = branch;
     }
-    public BigDecimal getBalance() {
+
+    public BigDecimal getAccountBalance() {
         return accountBalance;
     }
-    public void setBalance(BigDecimal accountBalance) {
+
+    public void setAccountBalance(BigDecimal accountBalance) {
         this.accountBalance = accountBalance;
     }
-    public BigDecimal getLimit() {
+
+    public BigDecimal getAccountLimit() {
         return accountLimit;
     }
-    public void setLimit(BigDecimal accountLimit) {
+
+    public void setAccountLimit(BigDecimal accountLimit) {
         this.accountLimit = accountLimit;
     }
 
+    
 }

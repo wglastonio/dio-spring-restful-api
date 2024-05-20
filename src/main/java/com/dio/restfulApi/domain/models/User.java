@@ -21,53 +21,63 @@ public class User {
     private String clientName;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Account accountNumber;
+    private Account account;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Card cardNumber;
+    private Card card;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Feature> features;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
-    
+
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getClientName() {
         return clientName;
     }
+
     public void setClientName(String clientName) {
         this.clientName = clientName;
     }
-    public Account getAccountNumber() {
-        return accountNumber;
+
+    public Account getAccount() {
+        return account;
     }
-    public void setAccountNumber(Account accountNumber) {
-        this.accountNumber = accountNumber;
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
+
+    public Card getCard() {
+        return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
+    }
+
     public List<Feature> getFeatures() {
         return features;
     }
+
     public void setFeatures(List<Feature> features) {
         this.features = features;
     }
-    public Card getCardNumber() {
-        return cardNumber;
-    }
-    public void setCardNumber(Card cardNumber) {
-        this.cardNumber = cardNumber;
-    }
+
     public List<News> getNews() {
         return news;
     }
+
     public void setNews(List<News> news) {
         this.news = news;
     }
 
-    
 }

@@ -1,0 +1,1 @@
+web: java -jar C:\\Users\\wglas\\OneDrive\\Documentos\\Trainings\\Digital Innovation One\\Santander\\Codigos\\Spring-RestAPI\\restfulApi\\build\\libs\\restfulApi-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,25 @@
+{
+    "clientName": "Wglastonio",
+    "account": {
+      "number": "12234-8",
+      "branch": "8888",
+      "accountBalance": 1342.88,
+      "accountLimit": 1000.00
+    },
+    "features": [
+      {
+        "icon": "",
+        "description": "Descricao da feature"
+      }
+    ],
+    "card": {
+      "cardNumber": "1234 3456 5678 7890",
+      "cardLimit": 1999.00
+    },
+    "news": [
+      {
+        "icon": "",
+        "description": "Descricao da novidade"
+      }
+    ]
+  }

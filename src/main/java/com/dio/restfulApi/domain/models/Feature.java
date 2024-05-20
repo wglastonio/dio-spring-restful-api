@@ -9,5 +9,4 @@ import jakarta.persistence.Entity;
 public class Feature extends IconDescription {
 
     
-    
 }

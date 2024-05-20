@@ -7,9 +7,9 @@ RESTful API using spring boot.
 classDiagram
     class User {
         -clientName: string
-        -accountNumber: Account
+        -account: Account
         -features: Feature[]
-        -cardNumber: Card
+        -card: Card
         -news: News[]
 
         +deposit(amount: float): void

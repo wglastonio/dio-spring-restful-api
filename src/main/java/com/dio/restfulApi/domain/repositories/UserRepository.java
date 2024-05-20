@@ -7,5 +7,7 @@ import com.dio.restfulApi.domain.models.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+
+    boolean existsByAccountNumber(String accountNumber);
     
 }
