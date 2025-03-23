@@ -76,3 +76,13 @@ classDiagram
 ## About the Author
 This project was developed by **Wglastonio**, a passionate Java developer with expertise in building robust and efficient applications. You can find more of their work on [GitHub](https://github.com/wglastonio).
 
+This README.md file was created by Microsoft Copilot by using the prompt below:
+```
+Hello, as a java specialist you will help me to create a readme.md file describing the main features of a project hosted on GitHub: https://github.com/wglastonio/dio-spring-restful-api.git
+The readme.md file should contains the following sections:
+1) Overview
+2) API endpoints
+3) Project dependencies
+4) Architecure
+5) About author
+```
